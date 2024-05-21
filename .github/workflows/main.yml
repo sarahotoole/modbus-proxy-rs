@@ -141,4 +141,4 @@ jobs:
 
       - name: Deploy to ECR
         run: |
-       regctl image copy ghcr.io/${{ env.REPO }}:${{ needs.prepare.outputs.version }} ${{ steps.login-ecr.outputs.registry }}/modbus-exporter:${{ needs.prepare.outputs.version }}
+          regctl image copy ghcr.io/${{ env.REPO }}:${{ needs.prepare.outputs.version }} ${{ steps.login-ecr.outputs.registry }}/modbus-exporter:${{ needs.prepare.outputs.version }}
