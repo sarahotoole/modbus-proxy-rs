@@ -106,6 +106,7 @@ jobs:
           npx semantic-release --no-ci
         env:
           GITHUB_TOKEN: ${{ secrets.PAT_TOKEN }}
+
   deploy:
     name: deploy
     runs-on: ubuntu-latest
